@@ -19,6 +19,7 @@
   testSuite.addAll("Koans.AboutComponentTags");
   testSuite.addAll("Koans.AboutExceptions");
   testSuite.addAll("Koans.AboutQueries");
+  testSuite.addAll("Koans.AboutMocks");
 
   if(application.version >= 10){
   /****************
