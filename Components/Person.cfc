@@ -24,8 +24,13 @@
 			return( this );
 		}   
 	
-	public string function getFullName() output="false" hint="I return the concatenation of firstName and lastName" {
+	public string function getFullName() output="false" hint="I return the concatenation of firstName and lastName properties." {
 		var FullName = getFirstName() & ' ' & getLastName();
 		return FullName;
+	}
+	
+	public numeric function getAge() output="false" hint="I return the age of the Person in years." {
+		var age = DateDiff("yyyy",getDateOfBirth(),now());
+		return age;
 	}
 }

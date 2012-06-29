@@ -1,13 +1,11 @@
 ﻿<cfscript>
 	variables.myObj = createObject("component","Components.Person").init("Carl","Von Stetten",CreateDate(1972,8,14));
-	/*myObj.setFirstName("Carl");
-	myObj.setLastName("Von Stetten");
-	myObj.setDateofBirth(CreateDate(1972,8,14));*/
 	variables.myDAO = createObject("component","Components.PersonDAO").init("Koans");
 	writeDump(variables.myDAO);
 	variables.newRecordID = variables.myDAO.savePerson(variables.myObj);
 	writeDump(variables.myObj.getFirstName());
 	writeDump(variables.myObj.getFullName());
+	WriteDump(variables.myObj.getAge());
 	writeDump(variables.myObj);
 	writeDump(variables.newRecordID);
 	writeDump(variables.myDAO.getPersonByID(1));

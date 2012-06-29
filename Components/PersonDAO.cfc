@@ -13,7 +13,6 @@
 		
 		<!--- Return this object reference --->
 		<cfreturn this>
-	}
 	</cffunction>
 	
 	<!--- Public Methods --->
